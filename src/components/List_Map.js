@@ -37,8 +37,8 @@ const WrapperItems = styled.div`
 	background-color: white;
 	width: 240px;
 	justify-content: space-between;
-	/* align-items: flex-start; */
 	margin-top: 5px;
+	/* margin-right: 10px; */
 	border-radius: 3px;
 `
 const Button_Div = styled.div`
@@ -47,9 +47,8 @@ const Button_Div = styled.div`
 	flex-direction: column;
 	align-items: flex-start;
 	width: 240px;
-	margin: 5px 0 0 8px;
+	margin: 5px 10px 0 8px;
 	border-radius: 2px;
-	/* background-color: grey; */
 	word-wrap: break-word;
 `
 const Map_Paragraph = styled.div`
