@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
-
+import './App.css'
+import Login from './pages/Form/Login'
+import MainPage from './pages/main/MainPage'
+import { Route, Routes } from 'react-router-dom'
+import TrelloMainPage from './pages/trelloMain/TrelloMainPage'
+import Register from './pages/Form/Register'
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div className='App'>
+			<Routes>
+				<Route path='/' element={<MainPage />} exact />
+				<Route path='register' element={<Register />} exact />
+				<Route path='login' element={<Login />} exact />
+				<Route path='/form' element={<Login />} exact />
+				<Route path='/mainPage' element={<TrelloMainPage />} exact />
+				<Route path='/exit' element={<Login />} />
+			</Routes>
+		</div>
+	)
 }
 
-export default App;
+export default App
